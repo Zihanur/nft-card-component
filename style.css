@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  position: relative;
+  scroll-behavior: auto;
+}
+
+.container {
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+  margin: 5px;
+  padding: 25px;
+}
+
+.banner {
+  width: 100%;
+  border-radius: 20px;
+}
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  color: white;
+  margin: 20px 0;
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(217, 21%, 75%);
+  margin-bottom: 20px;
+}
+.card-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.eth {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: hsl(178, 100%, 50%);
+}
+.days {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: hsl(215, 51%, 70%);
+}
+.eth p,
+.days p {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.creator {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-top: 20px;
+}
+.creator img {
+  width: 40px;
+  height: 40px;
+}
+
+.creator p {
+  font-size: 26px;
+  font-weight: 500;
+  color: hsl(217, 21%, 75%);
+}
+.name {
+  color: white;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 350px;
+  }
+}
